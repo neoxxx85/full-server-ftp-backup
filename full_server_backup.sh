@@ -31,6 +31,6 @@ if [ $? != "0" ]
    sleep 1
    rm /root/$FILENAME.tar.gz
    sleep 1
-   umount $DESTINATION_DIR && rm -r $DESTINATION_DIR
+   umount $DESTINATION_DIR && sleep 3 && rm -r $DESTINATION_DIR
    echo "Backup finished, all done!"
 fi
