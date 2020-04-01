@@ -1,5 +1,5 @@
 # full-server-ftp-backup
-Simple bash script for automatize full server backup, compress it into .tar.gz and send it to remote ftp.
+Simple bash script for automatize full server backup, compressed it into .tar.gz and send to remote ftp.
 
 Requirements are curlftpfs and rsync:
 
