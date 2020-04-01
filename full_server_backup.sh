@@ -1,10 +1,10 @@
 #!/bin/bash
 ###################################################################
-#Script Name	:full_backup.sh
+#Script Name	:full_server_backup.sh
 #Requirements	:curlftpfs & rsync
 #Description	:Make full disk backup and transfert to ftp server
-#Author        :Ugo Ridolfi
-#Email         :u.ridolfi@gmail.com
+#Author      	:Ugo Ridolfi
+#Email       	:u.ridolfi@gmail.com
 ###################################################################
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 FILENAME=full_disk-`date +%Y%m%d%H%M`
