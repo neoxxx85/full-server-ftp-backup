@@ -21,6 +21,10 @@ rsync -qaHAXS  --temp-dir=/var/tmp/rsync/tmp --exclude={"/dev/*","/proc/*","/sys
 if [ $? != "0" ]
   then
    cp /var/tmp/rsync/error_backup-$FILENAME.log $DESTINATION_DIR/
+   sleep 1
+   rm -r /var/tmp/rsync
+   sleep 1
+   umount $DESTINATION_DIR && sleep 3 && rm -r $DESTINATION_DIR
    echo "There was a problem with backup process!"
   else
    tar -cvpf /root/$FILENAME.tar.gz /var/tmp/rsync
