@@ -47,7 +47,7 @@ if [ $? != "0" ]
     then
      file_size=$((file_size*1/1000))
    fi
-   echo 'TOTAL_SIZE(FTP+BKP_FILE):'$((${ftp_files_size%.*}+${file_size%.*}))'GB'
+   echo 'TOTAL_SIZE(FTP+BKP_FILE):'$((${ftp_files_size%.*}+${file_size%.*}))'GB of '$FTP_STORAGE_SPACE_GB'GB'
    if [ $((${ftp_files_size%.*}+${file_size%.*})) '>' $FTP_STORAGE_SPACE_GB ]
     then
      #_delete_oldest_ftp_backup
